@@ -39,6 +39,7 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
+<<<<<<< HEAD
    /*  {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
@@ -48,6 +49,17 @@ export default defineConfig({
     //   name: 'webkit',
     //   use: { ...devices['Desktop Safari'] },
     // },
+=======
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
+
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
+    },
+>>>>>>> bca423d (POM plyawwright)
 
     /* Test against mobile viewports. */
     // {

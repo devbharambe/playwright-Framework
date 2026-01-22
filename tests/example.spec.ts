@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { test, expect } from '@playwright/test';
 
 test.describe("Annotation",async()=>{
@@ -22,4 +23,18 @@ test('get started link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 })
 
+=======
+import { test,expect } from "@playwright/test";
+import { LoginPage } from "../Pages/LoginPage.spec";
+import { SetUp } from "../Utils/SetUp";
+
+test("Login Test", async ({ page }) => {
+
+  const loginPage = new LoginPage(page);
+ await loginPage.openApplication();
+  await loginPage.loginToApplication(SetUp.username, SetUp.password);
+  await page.waitForTimeout(8000);
+  
+});
+>>>>>>> bca423d (POM plyawwright)
 
